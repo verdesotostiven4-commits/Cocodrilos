@@ -1,1 +1,18 @@
-.familyImage{width:100%;height:150px;background:#fff7e6;margin:12px 0;overflow:hidden;border-radius:18px}.familyImage img{width:100%;height:100%;object-fit:contain;display:block;padding:6px}.familyImageModal{height:300px}.familyCard{min-height:410px}
+.familyImage{width:100%;height:160px;background:linear-gradient(135deg,#fff7e6,#ffffff);margin:12px 0;overflow:hidden;border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.familyImage img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;padding:7px;transition:transform .45s ease,filter .45s ease}
+.familyCard:hover .familyImage img{transform:scale(1.045);filter:saturate(1.08) contrast(1.04)}
+.familyImageModal{height:310px;border-radius:26px;margin:20px 0 8px}
+.familyCard{min-height:430px;backdrop-filter:blur(12px)}
+.familyCard:hover{transform:translateY(-9px) scale(1.01)}
+.hero h1{filter:drop-shadow(0 18px 38px rgba(0,0,0,.35));animation:heroIn .8s ease both}
+.scheme,.intro,.orderBlock,.stats{animation:fadeUp .65s ease both}
+.box,.crocBtn span,.crocBtn strong{box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.controls label{transition:transform .25s ease,box-shadow .25s ease}
+.controls label:focus-within{transform:translateY(-3px);box-shadow:0 22px 60px rgba(0,0,0,.28)}
+.modal{animation:modalPop .35s ease both}
+.species,.traits span{transition:transform .22s ease}
+.species:hover,.traits span:hover{transform:translateY(-2px)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroIn{from{opacity:0;transform:scale(.96) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes modalPop{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:560px){.familyImage{height:130px}.familyImageModal{height:220px}.familyCard{min-height:440px}}
